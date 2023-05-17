@@ -1,0 +1,79 @@
+.component-conten {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-parent {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.component-parent {
+  position: relative;
+  width: 60vw;
+  height: 70vh;
+  background: none;
+  border-radius: 20px !important;
+}
+
+.component-content {
+  border-radius: 20px !important;
+  width: 60vw;
+  height: 70vh;
+  background: var(--background-content);
+  box-shadow: 2px 2px 13px rgba(8, 83, 93, 0.73);
+  overflow-y: auto;
+}
+
+h1 {
+  margin: 20px;
+}
+
+@media (max-width: 1250px) {
+  .content-parent {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-parent {
+    gap: 50px;
+  }
+  .component-parent {
+    width: 59vw;
+  }
+
+  .component-content {
+    width: 59vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-parent {
+    gap: 60px;
+    justify-content: center;
+  }
+  .component-parent {
+    width: 70vw;
+  }
+  .component-content {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-parent {
+    gap: 20px;
+  }
+  .component-parent {
+    width: 95vw;
+  }
+  .component-content {
+    width: 95vw;
+  }
+}

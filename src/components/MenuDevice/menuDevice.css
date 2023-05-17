@@ -1,0 +1,32 @@
+.menu-dropdown {
+  display: none;
+}
+
+.menu-button {
+  background: none !important;
+  border: none !important;
+}
+.menu-button img {
+  width: 30px;
+}
+.menu-button:active {
+  border: none !important;
+  background: none !important;
+}
+
+.dropdown-content {
+  width: 100px;
+
+  background: none !important;
+  box-shadow: none !important;
+}
+
+a:hover {
+  background: none !important;
+}
+
+@media (max-width: 768px) {
+  .menu-dropdown {
+    display: block;
+  }
+}

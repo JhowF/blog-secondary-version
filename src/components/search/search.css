@@ -1,0 +1,28 @@
+.component-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px !important;
+}
+.centralization {
+  width: 50vw;
+}
+
+.radius {
+  border-radius: 20px !important;
+  border: 1px solid var(--like-grey) !important;
+  box-shadow: 2px 2px 13px rgba(8, 83, 93, 0.73);
+}
+
+.lupa {
+  width: 25px;
+}
+
+@media (max-width: 600px) {
+  .size-width-mobile::placeholder {
+    font-size: 10px;
+  }
+  .component-search input {
+    text-align: center;
+  }
+}

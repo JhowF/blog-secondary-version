@@ -1,0 +1,77 @@
+.component-contact {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.title-contact {
+  margin-top: 50px;
+  text-align: start;
+  font-size: 30px !important;
+}
+.list-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+
+  margin-top: 100px;
+}
+.list-contact ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+
+  width: 320px;
+  max-width: 100%;
+  margin: 0 !important;
+
+  list-style: none;
+}
+
+.list-contact ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-contact ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.1s;
+  color: var(--black);
+}
+.list-contact ul li a:hover {
+  color: var(--like-gray);
+}
+
+.list-contact ul li p {
+  font-size: 14px;
+}
+
+.list-contact ul li img {
+  width: 40px;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .component-contact {
+    margin-bottom: 200px !important;
+  }
+  .title-contact {
+    font-size: 20px !important;
+    text-align: justify;
+  }
+
+  .header-contact {
+    gap: 10px;
+  }
+}

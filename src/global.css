@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif !important;
+  --background: #08535d !important;
+  --dark-color: #141e1d !important;
+  --white: #fff !important;
+  --black: #000 !important;
+  --like-grey: #e0e0e0 !important;
+  --modal-title: #363636 !important;
+  --background-content: linear-gradient(
+    64.79deg,
+    #ffffff 41.26%,
+    rgba(153, 188, 196, 0) 143.52%
+  );
+  --background-aside: linear-gradient(
+    188.66deg,
+    #08535d 4.79%,
+    rgba(8, 83, 93, 0) 85.86%
+  );
+}
+
+/*Question Mark */
+.questionMark {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 20px;
+}
+
+.component-question img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .questionMark {
+    margin-right: 20px;
+  }
+}
+
+/*APP CSS */
+.component-app {
+  background: #99bcc4;
+  mix-blend-mode: normal;
+  width: 100vw;
+  max-height: 100vh !important;
+}
+
+.app-header {
+  position: absolute;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 20px 35px;
+}
+
+a {
+  text-decoration: none;
+}

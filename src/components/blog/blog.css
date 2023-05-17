@@ -1,0 +1,95 @@
+.media {
+  margin: 20px 30px !important;
+}
+.header-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit {
+  margin: 0 30px;
+  border: none;
+  border-radius: 20px;
+  background: none;
+  width: 20px;
+  height: 20px;
+}
+.edit:hover {
+  cursor: pointer;
+  background-color: #b9b9b9;
+}
+.edit:active {
+  background: none !important;
+}
+.is-info {
+  background: none !important;
+  border-radius: 20px !important;
+}
+
+.is-info:hover {
+  background-color: #e0e0e0 !important;
+}
+
+.is-info p {
+  margin: 10px;
+  color: var(--background);
+}
+
+.text-edi {
+  margin: 20px 30px !important;
+  border-radius: 20px !important;
+}
+
+.text-edi-input {
+  font-size: 17px !important;
+  border: none !important;
+  background-color: none !important;
+
+  width: 90% !important;
+}
+
+.form .control {
+  width: 100%;
+}
+
+.form {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+
+  width: 100% !important;
+}
+
+.form button {
+  height: 41px !important;
+  background: none;
+  border: none !important;
+
+  font-size: 13px;
+}
+
+.blog-posted {
+  margin: 10px 10px;
+  border-bottom: 3px solid var(--white) !important;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .media {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+  .media-right {
+    align-self: flex-end;
+  }
+
+  .content p {
+    font-size: 10px !important;
+  }
+
+  .createBlog-component .media-content {
+    width: 100% !important;
+  }
+}

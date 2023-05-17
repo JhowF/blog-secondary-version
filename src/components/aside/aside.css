@@ -1,0 +1,132 @@
+.component-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 70vh;
+  max-height: 100%;
+  width: 15vw;
+  max-width: 100%;
+  margin: 20px;
+  background: var(--background-aside);
+  border-radius: 30px;
+}
+.component-content-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.container-aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 40%;
+  border-radius: 50px;
+  box-shadow: 2px 2px 13px rgba(8, 83, 93, 0.73);
+}
+
+.container-aside p {
+  color: var(--white) !important;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/*curious css */
+
+.curious {
+  border: none !important;
+  box-shadow: none !important;
+  justify-content: center !important;
+  height: 80% !important;
+}
+
+/*Responsiveness */
+@media (max-width: 1500px) {
+  .component-aside {
+    width: 13vw;
+  }
+}
+
+@media (max-width: 1400px) {
+  .component-aside {
+    width: 17vw;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .component-aside {
+    width: 16vw;
+    margin-left: 15px;
+  }
+  .aside-content {
+    margin-top: 22px;
+  }
+
+  .component-content-aside {
+    margin-top: 80px;
+    gap: 30px;
+  }
+  .container-aside p {
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 992px) {
+  .component-content-aside {
+    margin-top: 80px;
+    gap: 30px;
+  }
+  .component-aside {
+    width: 21vw;
+    margin-left: 12px;
+  }
+  .aside-content {
+    margin-top: 20px;
+  }
+  .container-aside p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .component-aside {
+    display: none;
+  }
+}
+
+@media (max-height: 820px) {
+  .component-content-aside {
+    margin-top: 50px;
+    gap: 25px;
+  }
+  .component-aside {
+    margin-left: 12px;
+  }
+  .aside-content {
+    margin-top: 40px;
+  }
+  .container-aside p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
